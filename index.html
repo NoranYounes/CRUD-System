@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="webfonts/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="container  mt-5">
+        <h1 class="mb-5 mx-auto">Bookmarker</h1>
+        <hr>
+        <h3 class="text-center mb-5 mt-4">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </h3>
+        <div class="myform">
+            <div class="mb-4">
+                <label for="formGroupExampleInput" class="form-label fw-bold"><i
+                        class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Bookmark Name">
+            </div>
+            <div class="mb-4">
+                <label for="formGroupExampleInput2" class="form-label fw-bold"><i class="fa-solid fa-link pe-2"></i>Site
+                    URL</label>
+                <input type="url" class="form-control" id="formGroupExampleInput2" placeholder="website url">
+            </div>
+            <div class="button text-center">
+                <button type="submit" onclick="add()" class="btn btn-lg sub ">Base class</button>
+            </div>
+        </div>
+        <hr>
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+
+            </thead>
+
+
+        </table>
+
+        <div class="mybuttun ">
+            <button id="deleteAll" type="button" class="btn btn-danger d-none"><i
+                    class="fa-solid fa-trash-can pe-1"></i> Delete All</button>
+        </div>
+    </div>
+    <div
+        class="mybox d-none bg-dark bg-opacity-50 position-absolute end-0 top-0 w-100 h-100 z-2 d-flex justify-content-center align-items-center">
+        <div class="boxcontent   bg-white p-3 rounded-3">
+            <div class="header d-flex justify-content-between align-items-center px-3">
+                <div class="circles">
+                    <span class="rounded-circle me-2"></span>
+                    <span class="rounded-circle me-2"></span>
+                    <span class="rounded-circle me-2"></span>
+                </div>
+                <button class="btn border-0" id="closeBtn">
+                    <i class="fa-solid fa-xmark close fs-3"></i>
+                </button>
+            </div>
+            <h5 class="p-3">Site Name or Url is not valid, Please follow the rules below :</h5>
+            <ol class="rules list-unstyled m-0 px-4">
+                <li>
+                    <i class="fa-regular fa-circle-right p-2 "></i>Site name must begin with capital letter,
+                    contain at least 3 characters and at most 10 characters
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                    valid one
+                </li>
+            </ol>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

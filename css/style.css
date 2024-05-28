@@ -1,0 +1,72 @@
+body{
+    background-color: #F7ECDE;
+}
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+hr {
+    border-top: 2px dotted black;
+  }
+h1{
+    font-family: "Pacifico", cursive;
+    color: #352E28;
+    position: relative;
+    width: fit-content;
+   font-size: 50px;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: #FEC260;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+h3{
+    background: linear-gradient(to right, #3EA65C, #feb47b);
+    /* Set text fill color to transparent to see the gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.sub{
+    background-color: #D1512D;
+    color: white;
+}
+.sub:hover{
+    background-color:#c14c2b ;
+    color: white;
+}
+.boxcontent{
+    width: 500px;
+    height: 300px;
+}
+.circles span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.circles span:nth-child(1){
+    background-color: #F15F5D;
+}
+.circles span:nth-child(2){
+    background-color: #FEBE2E;
+}
+.circles span:nth-child(3){
+    background-color: #4EB748;
+}
+.rules i {
+    color: #bb4120;
+}
